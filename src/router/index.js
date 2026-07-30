@@ -23,6 +23,7 @@ import Directors from "../components/Directors.vue";
 import Contact from "../components/Contact.vue";
 import WhyChooseUs from "../components/why-choose-us.vue";
 import Services from "../components/Services.vue";
+import RecruitmentServices from "../components/RecruitmentServices.vue";
 
 // Admin pages
 import AdminLogin from "../components/admin/AdminLogin.vue";
@@ -60,6 +61,11 @@ const routes = [
     component: () =>
       import("../views/VacancyDetails.vue")
   },
+  {
+  path: "/recruitment-services",
+  name: "RecruitmentServices",
+  component: RecruitmentServices
+},
 
   // Services
   {

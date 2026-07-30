@@ -95,54 +95,55 @@
     </div>
 
     <div class="services-grid">
+     
       <!-- Recruitment -->
-      <article class="service-card">
-        <div class="service-image-wrapper">
-          <img
-            src="../assets/RMC-Recreuitment.jpeg"
-            alt="RMC Group recruitment services"
-          />
+<article class="service-card">
+  <div class="service-image-wrapper">
+    <img
+      src="../assets/RMC-Recreuitment.jpeg"
+      alt="RMC Group recruitment services"
+    />
 
-          <span class="service-category">
-            Recruitment
-          </span>
-        </div>
+    <span class="service-category">
+      Recruitment
+    </span>
+  </div>
 
-        <div class="service-content">
-          <div class="service-icon">
-            <Users :size="27" />
-          </div>
+  <div class="service-content">
+    <div class="service-icon">
+      <Users :size="27" />
+    </div>
 
-          <h3>Recruitment & Labour Broking</h3>
+    <h3>Recruitment & Labour Broking</h3>
 
-          <p>
-            Helping organisations find suitable candidates while giving job
-            seekers access to available employment opportunities.
-          </p>
+    <p>
+      Helping organisations find suitable candidates while giving job
+      seekers access to available employment opportunities.
+    </p>
 
-          <ul>
-            <li>Available vacancies</li>
-            <li>Candidate applications</li>
-            <li>Recruitment support</li>
-          </ul>
+    <ul>
+      <li>Available vacancies</li>
+      <li>Candidate applications</li>
+      <li>Recruitment support</li>
+    </ul>
 
-          <div class="service-actions">
-            <router-link
-  to="/recruitment"
-  class="service-primary"
->
-  View Recruitment
-</router-link>
+    <div class="service-actions">
+      <router-link
+        to="/recruitment-services"
+        class="service-primary"
+      >
+        Learn More
+      </router-link>
 
-            <router-link
-              to="/recruitment"
-              class="service-secondary"
-            >
-              View Vacancies
-            </router-link>
-          </div>
-        </div>
-      </article>
+      <router-link
+        to="/recruitment"
+        class="service-secondary"
+      >
+        View Vacancies
+      </router-link>
+    </div>
+  </div>
+</article>
 
       <!-- Short-Term Loans -->
       <article class="service-card featured">
@@ -188,7 +189,7 @@
             </router-link>
 
             <a
-              href="https://wa.me/27659793242"
+              href="https://wa.me/27721590873"
               target="_blank"
               rel="noopener noreferrer"
               class="service-secondary whatsapp-link"
@@ -239,7 +240,7 @@
             </router-link>
 
             <a
-              href="https://wa.me/27659793242"
+              href="https://wa.me/27721590873"
               target="_blank"
               rel="noopener noreferrer"
               class="service-secondary whatsapp-link"

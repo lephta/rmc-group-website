@@ -190,13 +190,13 @@ const submitContact = async () => {
           <div class="contact-card">
             <h2>Short Term Loans</h2>
             <p>Email: <a href="mailto:loans@reatlegilegroup.com">loans@reatlegilegroup.com</a></p>
-            <a class="whatsapp-btn" href="https://wa.me/27659793242?text=Hello%20RMC%20Group%2C%20I%20would%20like%20more%20information%20about%20your%20services." target="_blank">Chat on WhatsApp</a>
+            <a class="whatsapp-btn" href="https://wa.me/27721590873?text=Hello%20RMC%20Group%2C%20I%20would%20like%20more%20information%20about%20your%20services." target="_blank">Chat on WhatsApp</a>
           </div>
 
           <div class="contact-card">
             <h2>Recruitment</h2>
             <p>Email: <a href="mailto:thabiso@reatlegilegroup.com">thabiso@reatlegilegroup.com</a></p>
-            <a class="whatsapp-btn" href="https://wa.me/27659793242?text=Hello%20RMC%20Group%2C%20I%20would%20like%20more%20information%20about%20your%20services." target="_blank">Chat on WhatsApp</a>
+            <a class="whatsapp-btn" href="https://wa.me/27721590873?text=Hello%20RMC%20Group%2C%20I%20would%20like%20more%20information%20about%20your%20services." target="_blank">Chat on WhatsApp</a>
           </div>
         </div>
 
