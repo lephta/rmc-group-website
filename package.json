@@ -1,0 +1,30 @@
+{
+  "name": "multi-business-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "api": "node server.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "better-sqlite3": "^12.11.1",
+    "cors": "^2.8.6",
+    "emailjs-com": "^3.2.0",
+    "express": "^5.2.1",
+    "firebase": "^12.12.0",
+    "lucide-vue-next": "^1.0.0",
+    "vue": "^3.5.30",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.5",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.1"
+  }
+}
