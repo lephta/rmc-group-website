@@ -35,7 +35,7 @@ import AdminContactEnquiries from "../components/admin/AdminContactEnquiries.vue
 import AdminLoanApplications from "../components/admin/AdminLoanApplications.vue";
 
 
-const ADMIN_UID = "XWwjnE1whIMyWqcW0yQeec5jf8a2";
+const ADMIN_UID = "2JIt6KezoLTClZ1okWreIAOlwGJ3";
 
 const routes = [
   {

@@ -10,26 +10,81 @@ import {
   Building2
 } from "lucide-vue-next";
 
+
+import csirLogo from "../assets/company-logo/CSIR.png";
+import cosmolLogo from "../assets/company-logo/cosmol.png";
+import BotshogaGroupLogo from "../assets/company-logo/BotshogaGroup.png";
+import EmalahleniLogo from "../assets/company-logo/Emalahleni.png";
+import GoldenLogo from "../assets/company-logo/Golden.png";
+import MinuchLogo from "../assets/company-logo/Minuch.png";
+import OHSCLogo from "../assets/company-logo/OHSC.png";
+import petraLogo from "../assets/company-logo/Petra.png";
+import RTMCLogo from "../assets/company-logo/RTMC.png";
+import CollegeLogo from "../assets/company-logo/College.png";
+import telkomLogo from "../assets/company-logo/Telkom.png";
+import vodacomLogo from "../assets/company-logo/Vodacom.png";
+
+const companies = [
+  {
+    name: "CSIR",
+    logo: csirLogo
+  },
+  {
+    name: "Comsol Networks",
+    logo: cosmolLogo
+  },
+  { name: "BotshogaGroup",
+    logo: BotshogaGroupLogo
+   
+  },
+  {
+    name: "Emalahleni",
+    logo: EmalahleniLogo
+  },
+  {
+    name: "Golden Key Distributors",
+    logo: GoldenLogo
+  },
+ 
+  {
+    name: "OHSC",
+    logo: OHSCLogo
+  },
+   {
+    name: "Munich Re",
+    logo: MinuchLogo
+  },
+  {
+    name: "Petra Diamonds",
+    logo: petraLogo
+  },
+  {
+    name: "RTMC",
+    logo: RTMCLogo
+  },
+  {
+    name: "South West Media College",
+    logo: CollegeLogo
+  },
+  {
+    name: "Telkom",
+    logo: telkomLogo
+  },
+  {
+    name: "Vodacom",
+    logo: vodacomLogo
+  }
+
+
+];
+
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
-const companies = [
-  { name: "Comsol Networks" },
-  { name: "Munich Re" },
-  { name: "CSIR" },
-  { name: "Botshoga Group" },
-  { name: "RTMC" },
-  { name: "Golden Key Distributors" },
-  { name: "Telkom" },
-  { name: "Vodacom" },
-  { name: "Diamond Mine" },
-  { name: "South West Media College" },
-  { name: "OSHC" },
-  { name: "Emalahleni Local Municipality" }
-];
+
 </script>
 
 
@@ -108,9 +163,13 @@ const companies = [
       :key="company.name"
       class="company-card"
     >
-      <div class="company-icon">
-        <Building2 :size="28" />
-      </div>
+<div class="company-icon">
+  <img
+    :src="company.logo"
+    :alt="company.name"
+    class="company-logo"
+  />
+</div>
 
       <h3>{{ company.name }}</h3>
     </article>
@@ -335,14 +394,12 @@ padding-top: 25px;
 }
 
 .company-icon {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #eeeeee;
-  color: #555;
-  border-radius: 50%;
+width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
 }
 
 .company-card h3 {

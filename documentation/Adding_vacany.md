@@ -186,7 +186,7 @@ update the :
     
  function isAdmin() {
       return isSignedIn()
-        && request.auth.uid == "XWwjnE1whIMyWqcW0yQeec5jf8a2";
+        && request.auth.uid == "2JIt6KezoLTClZ1okWreIAOlwGJ3";
     }
 
 

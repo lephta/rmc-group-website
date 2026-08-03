@@ -306,7 +306,7 @@ const submitForm = async () => {
       </div>
 
       <img
-        src="../assets/Loan.jpg"
+        src="../assets/office5.jpeg"
         alt="RMC Group short-term loan services"
         class="intro-image"
       />
@@ -333,7 +333,7 @@ const submitForm = async () => {
     <img src="../assets/office2.jpeg" alt="RMC Office 2" />
     <img src="../assets/office3.jpeg" alt="RMC Office 3" />
     <img src="../assets/office4.jpeg" alt="RMC Office 4" />
-    <img src="../assets/office5.jpeg" alt="RMC Office 5" />
+  
   </div>
 </section>
 
@@ -411,7 +411,7 @@ const submitForm = async () => {
         </span>
 
         <h2>
-          Information you may need
+          Information we need
         </h2>
 
         <p>

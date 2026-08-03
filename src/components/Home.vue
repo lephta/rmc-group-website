@@ -40,15 +40,42 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>Reatlegile Management Consulting Group</h1>
-        <p>
-          Your trusted partner for Recruitment, Micro Lending, and Pest Control
-          services.
-        </p>
-      </div>
-    </section>
+   <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="hero-badge">
+      Trusted Business Solutions
+    </span>
+
+    <h1>
+      Reatlegile Management Consulting Group
+    </h1>
+
+    <p>
+      Delivering professional Recruitment, Labour Broking,
+      Micro Lending and Pest Control solutions
+      to businesses and individuals across South Africa.
+    </p>
+
+    <div class="hero-buttons">
+      <router-link
+        to="/services"
+        class="hero-primary"
+      >
+        Explore Our Services
+      </router-link>
+
+      <router-link
+        to="/contact"
+        class="hero-secondary"
+      >
+        Contact Us
+      </router-link>
+    </div>
+  </div>
+</section>
 
     <!-- Welcome Section -->
     <section class="welcome-section">
@@ -514,24 +541,183 @@ onBeforeUnmount(() => {
   }
 }
 
-/* =========================
-   HERO
-========================= */
+/* ==========================================
+   HERO SECTION
+========================================== */
+
 .hero-section {
-  min-height: 250px;
+  position: relative;
+
+  min-height: 560px;
+
   display: flex;
-  align-items: center;
   justify-content: center;
- background-color: darkgrey;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-image:
+    url("../assets/hero-building.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.60)
+    );
+
+  z-index: 1;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+
+  padding: 20px;
+
   text-align: center;
-  color: #fff;
+
+  color: white;
+}
+
+.hero-badge {
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  padding: 10px 20px;
+
+  border-radius: 50px;
+
+  background: rgba(37, 99, 235, .95);
+
+  font-size: .85rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  margin-bottom: 25px;
+
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.hero-content p {
+  max-width: 720px;
+
+  margin: auto;
+
+  font-size: 1.2rem;
+
+  line-height: 1.9;
+
+  color: rgba(255,255,255,.95);
+}
+
+.hero-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 45px;
+
+  flex-wrap: wrap;
+}
+
+.hero-primary,
+.hero-secondary {
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-width: 220px;
+
+  height: 56px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: .3s;
+}
+
+.hero-primary {
+  background: #2563eb;
+
+  color: white;
+}
+
+.hero-primary:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-3px);
+}
+
+.hero-secondary {
+  background: rgba(255,255,255,.15);
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,.4);
+
+  backdrop-filter: blur(8px);
+}
+
+.hero-secondary:hover {
+  background: rgba(255,255,255,.25);
+
+  transform: translateY(-3px);
+}
+
+@media (max-width:768px) {
+
+  .hero-section{
+    min-height:480px;
+  }
+
+  .hero-content h1{
+    font-size:2.2rem;
+  }
+
+  .hero-content p{
+    font-size:1rem;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero-primary,
+  .hero-secondary{
+    width:100%;
+    max-width:320px;
+  }
+
 }
 
 /* =========================

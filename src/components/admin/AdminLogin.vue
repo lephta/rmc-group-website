@@ -10,7 +10,7 @@ import {
 import { auth } from "../../firebase";
 
 const ADMIN_UID =
-  "XWwjnE1whIMyWqcW0yQeec5jf8a2";
+  "2JIt6KezoLTClZ1okWreIAOlwGJ3";
 
 const router = useRouter();
 const route = useRoute();
